@@ -1,0 +1,140 @@
+/* ==== skeleton styles START ===== */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 10px;
+  overflow: hidden;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  background: #eef5db;
+  padding: 5%;
+}
+
+.alert,
+.container,
+.add {
+  background: rgba(255, 255, 255, 0.707);
+  border-radius: 20px;
+  height: fit-content;
+  box-shadow: 8px 8px 0 #b8d8d8;
+  padding: 2rem;
+}
+
+.alert {
+  height: 40px;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #4caf50;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+/* ==== skeleton styles END ===== */
+
+/* ==== scrolling styles START ==== */
+.dragscroll {
+  max-height: 380px;
+  overflow-y: scroll;
+  cursor: grab;
+  cursor: -o-grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background: rgb(41, 41, 41);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 10px 0 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 30px;
+  width: 8px;
+  border: 1px solid black;
+  background: #b8d8d8;
+  background: -webkit-linear-gradient(#eef5db, #b8d8d8);
+}
+
+::-webkit-scrollbar-track-piece {
+  height: 30px;
+  width: 30px;
+}
+/* ==== scrolling styles END ==== */
+
+/* ==== viewing styles START ==== */
+.delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete:hover {
+  filter: invert(1);
+}
+
+form {
+  flex: 1;
+  display: flex;
+}
+
+input {
+  flex: 1;
+}
+
+.todos li,
+#addTodo,
+input[type='submit'] {
+  font-weight: bold;
+  font-size: 13px;
+  color: #4f6367;
+}
+/* ==== viewing styles END ==== */
+
+/* ==== form styles START ==== */
+.add input[type='text'],
+.add input[type='text']:focus {
+  color: #eef5db;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #b8d8d8;
+}
+
+input[type='submit'],
+input[type='submit']:focus {
+  color: #4f6367;
+  border: none;
+  background: rgba(255, 255, 255, 0.707);
+  max-width: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #b8d8d8;
+  transition: 0.3s;
+}
+
+input[type='submit']:hover {
+  color: white;
+  background: #b8d8d8;
+  border: 1px solid #4f6367;
+}
+/* ==== form styles END ==== */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Fox Dealer To Do App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/business-office-icons/256/To-do_List-512.png"
+    type="image/x-icon" />
+</head>
+
+<body>
+  <div class="wrapper row">
+    <!-- div for flash msg confirming user's action -->
+    <div class="alert col-sm-10"> 
+    </div>
+
+    <div class="container col-sm-10">
+      <header class="mx-3">
+        <h1>Tasks List</h1>
+      </header>
+
+      <!-- drag scroll for when there is an overload on todos  -->
+      <!-- div for todos to be appended -->
+      <div class="dragscroll pt-3">
+        <ul class="list-group todos mx-auto">
+        </ul>
+      </div>
+    </div>
+
+    <!-- form to retrieve and store todo -->
+    <form class="add text-center col-sm-10">
+      <input class="form-control m-auto" id="addTodo" type="text" name="add" placeholder="Add a New Task" />
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  
+  <!-- dragscroll -->
+  <script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
+
+  <!-- todo logic  -->
+  <script src="app.js" async defer></script>
+</body>
+
+</html>
